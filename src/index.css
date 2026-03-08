@@ -1,1 +1,45 @@
 @import "tailwindcss";
+
+@theme {
+  /* Шрифты */
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* Типографика */
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-lg: 18px;
+  --text-lg--line-height: 28px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-2xl: 24px;
+  --text-2xl--line-height: 32px;
+  --text-3xl: 30px;
+  --text-3xl--line-height: 36px;
+  --text-4xl: 36px;
+  --text-4xl--line-height: 40px;
+  --text-5xl: 48px;
+  --text-5xl--line-height: 56px;
+  --text-display: 48px;
+  --text-display--line-height: 1.2;
+
+  /* Цвета текста */
+  --color-text-primary: #013a51;
+  --color-text-card: #023a51;
+  --color-text-white: #ffffff;
+  --color-text-accent: #0c91fc;
+
+  /* UI цвета */
+  --color-ui-button: #0c91fc;
+  --color-ui-block: #1b5871;
+  --color-ui-footer: #17546c;
+
+  /* Градиенты — храним как отдельные цвета */
+  --color-gradient-header-start: #1b5871;
+  --color-gradient-header-end: #104f68;
+  --color-gradient-card-start: #26627a;
+  --color-gradient-card-end: #14526b;
+}
