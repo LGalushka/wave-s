@@ -42,11 +42,8 @@
   --color-gradient-header-end: #104f68;
   --color-gradient-card-start: #26627a;
   --color-gradient-card-end: #14526b;
-
-  /* Кастомные утилиты */
-  @layer utilities {
-    .text-shadow-white {
-      text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.21);
-    }
-  }
+}
+/* Кастомные утилиты */
+@utility text-shadow-white {
+  text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.21);
 }

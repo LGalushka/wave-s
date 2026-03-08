@@ -6,7 +6,7 @@ export const products: Product[] = [
     name: 'Терминал "Platinum Space"',
     category: "other",
     type: "Терминал ",
-    image: "/images/PlatinumSpece -1.png",
+    image: "/public/images/PlatinumSpece -1.png",
     price: 587000,
     specs: [
       { label: "Корпус", value: "Нерж. сталь" },
@@ -31,7 +31,7 @@ export const products: Product[] = [
     name: "Зона доп. услуг для МСО и АЗС",
     category: "mso-equipment",
     type: "Готовое решение МСО",
-    image: "/images/Zona dop -2.png",
+    image: "/public/images/Zona dop -2.png",
     price: null,
     specs: [
       { label: "Напряжение", value: "220 В" },
@@ -54,7 +54,7 @@ export const products: Product[] = [
     name: 'Терминал "Platinum Space Robo" (настенный)',
     category: "other",
     type: "Терминал",
-    image: "/images/PlatinumSpece -Rodo-3.png",
+    image: "/public/images/PlatinumSpece -Rodo-3.png",
     price: 660000,
     specs: [
       { label: "Корпус", value: "Нерж. сталь" },
