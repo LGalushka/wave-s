@@ -9,9 +9,9 @@ export const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-30 w-full">
+      <header className="fixed top-0 left-0 right-0 z-50 w-full">
         {/* Верхняя полоса — скрыта на мобиле */}
-        <div className="hidden lg:block border-b border-white/10">
+        <div className="hidden lg:block">
           <TopBar />
         </div>
 
