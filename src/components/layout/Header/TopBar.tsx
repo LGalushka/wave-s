@@ -2,8 +2,8 @@ import { ChevronDown, Clock, Globe, Mail, Phone } from "lucide-react";
 
 export const TopBar = () => {
   return (
-    <div className="w-full py-2 px-4" style={{ background: "rgba(0, 0, 0, 0.15)" }}>
-      <div className="max-w-1280px mx-auto flex items-center justify-between">
+    <div className="w-full py-2 px-4">
+      <div className="container-main mx-auto flex items-center justify-between pb-4 border-b border-white/20">
         {/* Город */}
         <button className="flex items-center gap-1.5 text-text-white/80 text-sm hover:text-text-white transition-colors">
           <Globe size={14} />

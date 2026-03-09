@@ -9,12 +9,7 @@ export const Header = () => {
 
   return (
     <>
-      <header
-        className="fixed top-0 left-0 right-0 z-30 w-full"
-        style={{
-          background: "linear-gradient(180deg, #1B5871 0%, #104F68 100%)",
-        }}
-      >
+      <header className="fixed top-0 left-0 right-0 z-30 w-full">
         {/* Верхняя полоса — скрыта на мобиле */}
         <div className="hidden lg:block border-b border-white/10">
           <TopBar />
