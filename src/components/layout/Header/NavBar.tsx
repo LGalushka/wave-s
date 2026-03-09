@@ -5,14 +5,15 @@ import { navLinks } from "./navLinks";
 
 interface NavBarProps {
   onCallClick: () => void;
+  onMenuClick: () => void;
 }
 
-export const NavBar = ({ onCallClick }: NavBarProps) => {
+export const NavBar = ({ onCallClick, onMenuClick }: NavBarProps) => {
   return (
     <div className="w-full 'px-4' 'px-3'">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/** Бургер для мобильного */}
-        <button className="lg: hidden text-text-white">
+        <button className="lg: hidden text-text-white" onClick={onMenuClick}>
           <Menu size={24} />
         </button>
 
