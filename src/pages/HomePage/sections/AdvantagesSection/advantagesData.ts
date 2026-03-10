@@ -2,6 +2,11 @@ import advantageGuarantee from "@/assets/icons/advantageGuarantee.svg";
 import advantageQuality from "@/assets/icons/advantageQuality.svg";
 import advantageGear from "@/assets/icons/advantageGear.svg";
 import advantageChip from "@/assets/icons/advantageChip.svg";
+import rmIcon from "@/assets/icons/partner-RM.png";
+import cashcodeIcon from "@/assets/icons/partner-cashcode.png";
+import HawkIcon from "@/assets/icons/partner-hawk.png";
+import interpumpIcon from "@/assets/icons/partner-interpump.png";
+import tecomecIcon from "@/assets/icons/partner-tecomec.png";
 
 export const advantageItems = [
   { id: "1", icon: advantageGuarantee, description: "Гарантия на все оборудование 12 месяцев" },
@@ -15,4 +20,12 @@ export const advantageBrands = [
   { id: "2", title: "Idrobase", description: "бренд, производящий аксессуары, шланги, фильтры и др. продукцию" },
   { id: "3", title: "Eureka", description: "итальянский производитель поломоечной и подметальной техники" },
   { id: "4", title: "Gibli", description: "итальянский бренд уборочной техники, фильтры и другая продукция" },
+];
+
+export const partners = [
+  { id: "1", icon: rmIcon, alt: "RM" },
+  { id: "2", icon: cashcodeIcon, alt: "CashCode" },
+  { id: "3", icon: HawkIcon, alt: "HAWK" },
+  { id: "4", icon: interpumpIcon, alt: "Interpump" },
+  { id: "5", icon: tecomecIcon, alt: "Tecomec" },
 ];

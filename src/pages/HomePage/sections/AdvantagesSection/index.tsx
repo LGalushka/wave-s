@@ -1,6 +1,7 @@
 import { AdvantageCard } from "../HeroSection/AdvantageCard";
 import { AdvantageItemCard } from "./AdvantageItemCard";
 import { advantageBrands, advantageItems } from "./advantagesData";
+import { PartnetsSection } from "./PartnersSection";
 import { PromoBlock } from "./PromoBlock";
 import { StatsBlock } from "./StatsBlock";
 
@@ -33,6 +34,11 @@ export const AdvantagesSection = () => {
         {/** 4. Промо-блок */}
         <div className="mt-8">
           <PromoBlock />
+        </div>
+
+        {/** 5. Партнеры */}
+        <div className="mt-8">
+          <PartnetsSection />
         </div>
       </div>
     </section>
