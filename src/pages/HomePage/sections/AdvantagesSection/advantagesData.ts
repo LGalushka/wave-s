@@ -9,3 +9,10 @@ export const advantageItems = [
   { id: "3", icon: advantageGear, description: "10 летний опыт производства моек самообслуживания" },
   { id: "4", icon: advantageChip, description: "Уникальные технологии" },
 ];
+
+export const advantageBrands = [
+  { id: "1", title: "Tekomek", description: "аксессуары для моечного оборудования бесконтактных моек" },
+  { id: "2", title: "Idrobase", description: "бренд, производящий аксессуары, шланги, фильтры и др. продукцию" },
+  { id: "3", title: "Eureka", description: "итальянский производитель поломоечной и подметальной техники" },
+  { id: "4", title: "Gibli", description: "итальянский бренд уборочной техники, фильтры и другая продукция" },
+];
