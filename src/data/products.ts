@@ -70,7 +70,7 @@ export const products: Product[] = [
       { label: "Банковские карты", status: "included" },
     ],
     isAvailable: true,
-    isPopular: false,
+    isPopular: true,
     description: "Профессиональный терминал для мойки самообслуживания",
   },
 ];
