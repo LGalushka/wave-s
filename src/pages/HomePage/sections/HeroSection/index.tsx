@@ -3,6 +3,7 @@ import { AdvantageCard } from "./AdvantageCard";
 import { Button } from "@/components/ui/Button";
 import gradienImage from "../../../../../public/images/Ellipse gradient.png";
 import terminalImage from "../../../../../public/images/terminal.png";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const HeroSection = () => {
   return (
@@ -34,24 +35,37 @@ export const HeroSection = () => {
             <div className="flex gap-4 mt-2">
               {/* Видео */}
               <div
-                className="flex flex-col gap-2 p-4 rounded-xl cursor-pointer hover:opacity-80 transition-opacity"
-                style={{ background: "rgba(255,255,255,0.07)" }}
+                className="flex flex-col gap-2 p-4 rounded-xl cursor-pointer hover:opacity-80 transition-opacity w-75 h-65"
+                style={{
+                  background: "linear-gradient(180deg, #26627A 0%, #14526B 100%)",
+                  boxShadow: "inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(255,255,255,0.10)",
+                  border: "1px solid rgba(255,255,255,0.2)",
+                }}
               >
-                <div className="w-12 h-12 rounded-lg overflow-hidden">
-                  <img src="/images/video-preview.jpg" alt="Видео" className="w-full h-full object-cover" />
+                <div className="w-full rounded-lg overflow-hidden">
+                  {" "}
+                  <img src="/public/images/videoPrimary.png" alt="Видео" className="w-full h-full object-cover" />
                 </div>
-                <span className="text-text-white font-medium text-sm">Видео</span>
-                <span className="text-text-white/50 text-xs">Подробнее о наших мойках в видео формате</span>
+                <div className="flex flex-col mt-auto mb-2 gap-1">
+                  <span className="text-white font-semibold text-xl">Видео</span>
+                  <span className="text-white font-thin text-xs">Подробнее о наших мойках в видео формате</span>
+                </div>
               </div>
 
               {/* Пресса */}
               <div
-                className="flex flex-col gap-2 p-4 rounded-xl cursor-pointer hover:opacity-80 transition-opacity"
-                style={{ background: "rgba(255,255,255,0.07)" }}
+                className="flex flex-col gap-2 p-4 rounded-xl cursor-pointer hover:opacity-80 transition-opacity w-75 h-65"
+                style={{
+                  background: "linear-gradient(180deg, #26627A 0%, #14526B 100%)",
+                  boxShadow: "inset 0 1px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(255,255,255,0.10)",
+                  border: "1px solid rgba(255,255,255,0.2)",
+                }}
               >
-                <div className="w-12 h-12 rounded-lg overflow-hidden bg-white/10" />
-                <span className="text-text-white font-medium text-sm">Новости / Пресса</span>
-                <span className="text-text-white/50 text-xs">Подробнее о наших последних новостях</span>
+                <img src="/public/images/news.png" alt="Новости" className="w-16 h-16" />
+                <div className="flex flex-col mt-auto mb-2 gap-1">
+                  <span className="text-white font-semibold text-xl">Новости / Пресса</span>
+                  <span className="text-white font-thin text-xs">Подробнее о наших последних новостях</span>
+                </div>
               </div>
             </div>
           </div>
@@ -73,15 +87,32 @@ export const HeroSection = () => {
               }}
             />
             {/* Название + пагинация */}
-            <div className="flex items-center justify-between w-full mt-4 px-4">
-              <button className="text-text-white/50 hover:text-text-white transition-colors text-xl">←</button>
+            <div className="flex items-center justify-between w-full mt-4 px-12">
+              <button
+                className="text-text-white hover:text-text-white transition-colors text-xl rounded-full w-12 h-12 items-center justify-center flex"
+                style={{
+                  background: "linear-gradient(180deg, #26627A 50 %, #14526B 100%)",
+                  boxShadow: "inset 0 2px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(255,255,255,0.10)",
+                  border: "1px solid rgba(255,255,255,0.2)",
+                }}
+              >
+                <ArrowLeft size={24} />
+              </button>
               <div className="flex flex-col items-center">
                 <span className="text-text-white/70 text-sm">Терминал «Espro»</span>
                 <a href="#" className="text-text-accent text-xs hover:underline">
                   Узнать подробнее
                 </a>
               </div>
-              <button className="text-text-white/50 hover:text-text-white transition-colors text-xl">→</button>
+              <button
+                className="bg-ui-button text-text-white hover:text-text-white transition-colors text-xl rounded-full w-12 h-12 items-center justify-center flex"
+                style={{
+                  boxShadow: "inset 0 2px 0 rgba(255,255,255,0.35), inset 0 -1px 0 rgba(255,255,255,0.10)",
+                  border: "1px solid rgba(255,255,255,0.2)",
+                }}
+              >
+                <ArrowRight size={24} />
+              </button>
             </div>
           </div>
         </div>

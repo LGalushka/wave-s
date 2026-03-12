@@ -3,7 +3,7 @@ import { partners } from "./advantagesData";
 export const PartnetsSection = () => {
   return (
     <section className="w-full py-8">
-      <div className="container-main">
+      <div className="container-main p-0">
         <h2 className="text-text-white font-semibold text-5xl mb-8">Наши партнеры</h2>
 
         <div

@@ -1,5 +1,5 @@
 interface AdvantageItemCardProps {
-  icon: string;
+  icon?: string;
   description: string;
 }
 
@@ -18,6 +18,7 @@ export const AdvantageItemCard = ({ icon, description }: AdvantageItemCardProps)
         <img src={icon} alt="description" width={55} height={55} />
 
         {/**Описание  */}
+
         <p className="text-text-white font-medium text-2xl leading-tight mt-17.5">{description}</p>
       </div>
     </div>

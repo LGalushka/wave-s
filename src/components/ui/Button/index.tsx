@@ -11,7 +11,7 @@ export const Button = ({ variant = "primary", withArrow = false, children, class
     primary: `
       bg-ui-button text-text-white font-medium
       text-base rounded-[10px] px-6 py-3
-      hover:opacity-90 transition-opacity duration-200 cursor-pointer 
+      hover:opacity-90 transition-opacity duration-200 cursor-pointer border border-white/20
     `,
     consultation: `
       relative text-white font-medium text-[18px] 
@@ -23,7 +23,7 @@ export const Button = ({ variant = "primary", withArrow = false, children, class
     header: `
       backdrop-blur-md text-text-white font-normal
       text-base rounded-[6px] px-4 py-2
-      hover:opacity-90 transition-opacity duration-200 cursor-pointer
+      hover:opacity-90 transition-opacity duration-200 cursor-pointer border border-white/20
     `,
   };
 

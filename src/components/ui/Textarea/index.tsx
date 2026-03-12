@@ -10,7 +10,7 @@ export const Textarea = ({ className = "", ...props }: TextareaProps) => {
       className={`
       w-full px-5 py-4
       text-text-white font-normal text-base
-      rounden-[10px]
+      rounded-[10px]
       outline-none
       placeholder:text-white/80
       resize-none
@@ -18,7 +18,7 @@ export const Textarea = ({ className = "", ...props }: TextareaProps) => {
       ${className}
       `}
       style={{
-        background: "rgba(255, 255, 255, 0.05)",
+        background: "rgba(255, 255, 255, 0.02)",
         border: "1px solid rgba(255, 255, 255, 0.2)",
       }}
       rows={4}

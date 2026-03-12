@@ -97,7 +97,7 @@ export const Footer = () => {
       {/* Нижняя часть — копирайт */}
       <div className="w-full">
         <div className="container-main py-4 flex flex-col md:flex-row items-center justify-between gap-2 border-t border-white/10">
-          <p className="text-text-white/50 text-sm">© 2014-2023 «Wave-S». Мойки самообслуживания</p>
+          <p className="text-text-white/50 text-sm">© 2014-2026 «Wave-S». Мойки самообслуживания</p>
           <div className="flex items-center gap-4">
             {bottomLinks.map((link) => (
               <NavLink

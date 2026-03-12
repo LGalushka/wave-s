@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 @import "tailwindcss";
 
 @theme {
@@ -10,7 +12,7 @@
   --text-sm: 14px;
   --text-sm--line-height: 20px;
   --text-base: 16px;
-  --text-base--line-height: 24px;
+  --text-lg--line-height: 28px;
   --text-lg: 18px;
   --text-lg--line-height: 28px;
   --text-xl: 20px;
@@ -47,12 +49,9 @@
 @utility text-shadow-white {
   text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.21);
 }
-@layer utilities {
-  .container-main {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
+
+@utility container-main {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-inline: 1rem;
 }
