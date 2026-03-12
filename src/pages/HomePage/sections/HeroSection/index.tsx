@@ -1,8 +1,8 @@
 import { heroAdvantages } from "./heroData";
 import { AdvantageCard } from "./AdvantageCard";
 import { Button } from "@/components/ui/Button";
-import gradienImage from "../../../../../public/images/Ellipse gradient.png";
-import terminalImage from "../../../../../public/images/terminal.png";
+import gradienImage from "/images/Ellipse gradient.png";
+import terminalImage from "/images/terminal.png";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 export const HeroSection = () => {
@@ -44,7 +44,7 @@ export const HeroSection = () => {
               >
                 <div className="w-full rounded-lg overflow-hidden">
                   {" "}
-                  <img src="/public/images/videoPrimary.png" alt="Видео" className="w-full h-full object-cover" />
+                  <img src="/images/videoPrimary.png" alt="Видео" className="w-full h-full object-cover" />
                 </div>
                 <div className="flex flex-col mt-auto mb-2 gap-1">
                   <span className="text-white font-semibold text-xl">Видео</span>
@@ -61,7 +61,7 @@ export const HeroSection = () => {
                   border: "1px solid rgba(255,255,255,0.2)",
                 }}
               >
-                <img src="/public/images/news.png" alt="Новости" className="w-16 h-16" />
+                <img src="/images/news.png" alt="Новости" className="w-16 h-16" />
                 <div className="flex flex-col mt-auto mb-2 gap-1">
                   <span className="text-white font-semibold text-xl">Новости / Пресса</span>
                   <span className="text-white font-thin text-xs">Подробнее о наших последних новостях</span>

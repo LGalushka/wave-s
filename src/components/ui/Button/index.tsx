@@ -1,7 +1,7 @@
 import type { ButtonHTMLAttributes } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "consultation" | "header";
+  variant?: "primary" | "consultation" | "header" | "outline";
   withArrow?: boolean;
   children: React.ReactNode;
   className?: string;
@@ -25,6 +25,7 @@ export const Button = ({ variant = "primary", withArrow = false, children, class
       text-base rounded-[6px] px-4 py-2
       hover:opacity-90 transition-opacity duration-200 cursor-pointer border border-white/20
     `,
+    outline: "text-text-primary text-base",
   };
 
   const gradients = {
@@ -43,6 +44,7 @@ export const Button = ({ variant = "primary", withArrow = false, children, class
       background: "linear-gradient(93.53deg, #69BDF9 0%, rgba(105, 189, 249, 0.34) 100%)",
       backdropFilter: "blur(12px)",
     },
+    outline: {},
   };
 
   return (
