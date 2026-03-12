@@ -3,6 +3,7 @@ import { fetchProducts } from "@/features/catalog/catalogSlice";
 import { useAppDispatch, useAppSelector } from "@/hooks/useAppDispatch";
 import { useEffect } from "react";
 import { CatalogTabs } from "./sections/CategoryTabs";
+import { ProductsGrid } from "./sections/ProductsGrid";
 
 export const CatalogPage = () => {
   const dispatch = useAppDispatch();
@@ -37,7 +38,7 @@ export const CatalogPage = () => {
       <div className="bg-white">
         <div className="container-main py-8">
           <CatalogTabs />
-          {/*<ProductsGrid /> */}
+          <ProductsGrid />
         </div>
       </div>
 

@@ -8,8 +8,8 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <div className="flex flex-col rounded-[10px] overflow-hidden border border-text-primary/50">
       {/**Фото  */}
-      <div className="h-87 p-4">
-        <img src={product.image} alt={product.name} className="w-full h-full object-cover mt-2 rounded-[10px]" />
+      <div className="p-4">
+        <img src={product.image} alt={product.name} className="w-92.5 h-84.5 rounded-[10px]" />
       </div>
 
       {/**Информация */}
