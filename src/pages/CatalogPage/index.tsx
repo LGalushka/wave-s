@@ -4,6 +4,7 @@ import { useAppDispatch, useAppSelector } from "@/hooks/useAppDispatch";
 import { useEffect } from "react";
 import { CatalogTabs } from "./sections/CategoryTabs";
 import { ProductsGrid } from "./sections/ProductsGrid";
+import { InfoSection } from "./sections/InfoSection";
 
 export const CatalogPage = () => {
   const dispatch = useAppDispatch();
@@ -43,7 +44,7 @@ export const CatalogPage = () => {
       </div>
 
       {/** Информационны блок */}
-      {/* <InfoSection /> */}
+      <InfoSection />
 
       {/**Полезные статьи */}
     </div>
