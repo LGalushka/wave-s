@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { CatalogTabs } from "./sections/CategoryTabs";
 import { ProductsGrid } from "./sections/ProductsGrid";
 import { InfoSection } from "./sections/InfoSection";
+import { NewsSection } from "./sections/NewsSection";
 
 export const CatalogPage = () => {
   const dispatch = useAppDispatch();
@@ -47,6 +48,7 @@ export const CatalogPage = () => {
       <InfoSection />
 
       {/**Полезные статьи */}
+      <NewsSection />
     </div>
   );
 };

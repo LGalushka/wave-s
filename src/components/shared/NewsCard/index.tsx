@@ -2,9 +2,9 @@ import { ArrowUpRight, Clock } from "lucide-react";
 
 interface NewsCardProps {
   title: string;
-  description: string;
+  description?: string;
   image: string;
-  date: string;
+  date?: string;
 }
 
 export const NewsCard = ({ title, description, image, date }: NewsCardProps) => {
