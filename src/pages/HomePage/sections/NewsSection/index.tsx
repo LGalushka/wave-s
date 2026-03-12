@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { NewsCard } from "./NewsCard";
-import { newsItems } from "./newData";
+import { NewsCard } from "@/components/shared/NewsCard/index";
+import { newsItems } from "./newsData";
 
 export const NewsSection = () => {
   return (
