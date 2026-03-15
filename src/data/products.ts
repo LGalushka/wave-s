@@ -158,7 +158,7 @@ export const products: Product[] = [
     description: "Профессиональный терминал для мойки самообслуживания",
   },
   {
-    id: "7",
+    id: "6",
     name: 'Терминал "Platinum Space Robo" (настенный)',
     category: "other",
     type: "Терминал",
