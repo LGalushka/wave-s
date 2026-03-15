@@ -4,6 +4,10 @@ import { useAppSelector, useAppDispatch } from "@/hooks/useAppDispatch";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import { ProductHero } from "./sections/ProductHero";
+import { ProductDescription } from "./sections/ProductDescription";
+import { NewsSection } from "../CatalogPage/sections/NewsSection";
+
 export const ProductPage = () => {
   const dispatch = useAppDispatch();
 
@@ -22,8 +26,12 @@ export const ProductPage = () => {
     return <div className="container-main py-8 text-text-primary">Товар не найден</div>;
   }
   return (
-    <div className="bg-white">
-      <div className="container-main py-8">{/* <ProductInfo /> */}</div>
+    <div className="bg-white pt-20">
+      <div className="container-main py-8 ">
+        <ProductHero product={product} />
+        <ProductDescription />
+        <NewsSection />
+      </div>
     </div>
   );
 };

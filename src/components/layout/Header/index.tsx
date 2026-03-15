@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { TopBar } from "./TopBar";
 import { NavBar } from "./NavBar";
 import { MobileDrawer } from "./MobileDrawer";
@@ -6,23 +6,13 @@ import { MobileDrawer } from "./MobileDrawer";
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isCallModalOpen, setIsCallModalOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   return (
     <>
       <header
-        className="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300"
+        className="fixed top-0 left-0 right-0 z-50 w-full"
         style={{
-          background: scrolled ? "linear-gradient(180deg, #1B5871 0%, #104F68 100%)" : "transparent",
-          backdropFilter: scrolled ? "blur(10px)" : "none",
+          background: "linear-gradient(180deg, #1B5871 100%, #104F68 0%)",
         }}
       >
         <div className="hidden lg:block">

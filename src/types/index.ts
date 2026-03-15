@@ -6,6 +6,12 @@ export type ProductCategory =
 
 export type PaymentFeatureStatus = "included" | "option" | "not-included";
 
+export interface FunctionalFeature {
+  label: string;
+  value: string;
+  status?: PaymentFeatureStatus;
+}
+
 export type PaymentFeature =
   | { label: string; value: string; status?: never }
   | { label: string; status: PaymentFeatureStatus; value?: never };
@@ -24,6 +30,7 @@ export interface Product {
   price: number | null;
   specs: ProductSpec[];
   paymentFeatures?: PaymentFeature[];
+  functional?: FunctionalFeature[];
   isAvailable: boolean;
   isPopular?: boolean;
   description?: string;
